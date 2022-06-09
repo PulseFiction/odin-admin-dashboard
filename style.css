@@ -15,6 +15,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    height: 100%;
     
    
     
@@ -25,7 +26,7 @@ body {
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 6fr;
     
-    height: 100vh;
+    
 }
 
 /* Header */
@@ -61,6 +62,8 @@ body {
     border: none;
     width: 60rem;
     height: 3rem;
+    padding: 1rem;
+    font-size: 15pt;
 }
 
 .header__searchbar-profile {
@@ -223,6 +226,15 @@ li > img {
 
 }
 
+.main__projects-panel-content > h4 {
+    font-size: 15pt;
+}
+
+.main__projects-panel-content > p {
+    font-size: 14pt;
+    
+}
+
 .main__projects-panel-buttons {
     display: flex;
     align-items: center;
@@ -231,7 +243,8 @@ li > img {
 }
 
 .main__announcements {
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
+    
 }
 
 .main__announcements-content {
@@ -241,9 +254,9 @@ li > img {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 1rem;
+    
     
     
     
@@ -276,8 +289,9 @@ h3 {
 
 .main__trending {
     grid-column: 2 /3;
+   
     margin-top: 1rem;
-    padding: 1rem;
+    padding: 2rem 0rem;
 }
 
 .main__trending-content {
