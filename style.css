@@ -15,7 +15,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    height: 100%;
+    
     
    
     
@@ -25,9 +25,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 6fr;
+    max-height: 100vh;
     
     
 }
+
 
 /* Header */
 
@@ -48,12 +50,12 @@ body {
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    padding: 0 2rem;
+    padding: 1.2rem 2rem;
 }
 
 .magnify,
 .bell {
-    width: 2rem;
+    width: 1.5rem;
 }
 
 .search {
@@ -61,7 +63,7 @@ body {
     border-radius: 25px;
     border: none;
     width: 60rem;
-    height: 3rem;
+    height: 2rem;
     padding: 1rem;
     font-size: 15pt;
 }
@@ -69,8 +71,12 @@ body {
 .header__searchbar-profile {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     
+}
+
+.header__searchbar__profile-name > h2 {
+    font-size: 15pt;
 }
 
 
@@ -82,8 +88,8 @@ body {
 }
 
 .header__searchbar-profile-name-pfp {
-    width: 5rem;
-    height: 5rem;
+    width: 3.5rem;
+    height: 4rem;
     border-radius: 50px;
 }
 
@@ -124,6 +130,20 @@ button {
     color: var(--clr-primary-white);
 }
 
+button:hover {
+    background-color: var(--clr-primary-grey);
+    color: var(--clr-primary-blue);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: var(--clr-primary-blue);
+}
 
 /* Sidebar */
 
@@ -203,6 +223,8 @@ li > img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    height: 100vh;
+    align-self: stretch;
     
 }
 
@@ -211,16 +233,14 @@ li > img {
 .main__projects-panel {
     background-color: var(--clr-primary-white);
     border-radius: 5px;
-    height: 15rem;
-    
     padding: 2rem;
     border-left: 0.6rem solid var(--clr-primary-yellow);
     box-shadow: 0px 0px 5px 0px black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-
+   
+   
     
 
 
@@ -243,7 +263,8 @@ li > img {
 }
 
 .main__announcements {
-    padding: 2rem 0rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
     
 }
 
@@ -256,6 +277,7 @@ li > img {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    
     
     
     
@@ -289,9 +311,9 @@ h3 {
 
 .main__trending {
     grid-column: 2 /3;
-   
     margin-top: 1rem;
-    padding: 2rem 0rem;
+    padding-top: 3rem;
+    padding-right: 2rem;
 }
 
 .main__trending-content {
