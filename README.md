@@ -8,7 +8,7 @@ To design an admin dashboard using grid for the layout. A layout was provided to
 I then added my own icons to.
 
 ### The template design
-
+![image](https://user-images.githubusercontent.com/87199411/173006727-96fdfefb-4cec-4d85-9a57-c07115305beb.png)
 
 
 ### Live Link
